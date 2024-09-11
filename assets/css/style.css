@@ -7,20 +7,22 @@
 }
 
 :root{
+    --drop-blue-link: #005cff;
     --drop-blue: rgb(37 99 235);
     --drop-blue-500: rgb(59 130 246);
     --drop-blue-300: #b4d0e7;
     --drop-black: #000;
     --drop-white: #fff;
+    --drop-gray: gray;
 }
 
-/* .debuge .jumbotron{
+.debuge #plans{
     border: 1px dashed black;
-    width: 100%;
-}  */
+} 
 
 .row{
     display: flex;
+    margin: 0 -1;
 }
 
 .col-4{
@@ -45,7 +47,7 @@
 }
 
 .container-small{
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -127,5 +129,81 @@
             }
         }
     }
+
+    #plans{
+        padding-top: 5rem;
+        padding-bottom: 9rem;
+        h2{
+            padding: 2rem 0;
+            font-size: 2rem;
+        }
+        span{
+            padding-right: 1.8rem;
+        }
+        .plans_card{
+            padding-top: 3rem;
+            gap: 1.5rem;
+        }
+        .plans{
+            border: 1px solid gray;
+        }
+        .info{
+            padding: 1.4rem 1rem;
+            h3{
+                padding: 1rem 0;
+            }
+            .month{
+                display: block;
+                padding: .3rem 0 2rem 0;
+                color: var(--drop-gray);
+            }
+            i{
+                padding-right: .4rem;
+            }
+            p{
+                padding-bottom: 1rem;
+            }
+            button{
+                margin: 1.5rem 0 1rem 0;
+                padding: .5rem 1rem;
+                background-color: var(--drop-blue);
+                a{
+                    text-decoration: none;
+                    color: var(--drop-white);
+                }
+            }
+            a{
+                color: var(--drop-blue);
+            }
+            .bg_row{
+                height: 1px;
+                background-color: var(--drop-gray);
+                width: 3rem;
+            }
+            h4{
+                padding: 2rem 0 1.3rem 0; 
+            }
+            .plan_points{
+                padding-bottom: 4rem;
+                i{
+                    color: var(--drop-blue-link);
+                    font-weight: 800;
+                }
+            }
+        }
+
+        .subtitle{
+            border-bottom: 1px solid grey;
+            h5{
+                text-align: center;
+                padding: .7rem;
+                font-weight: 400;
+                i{
+                    padding-right: .4rem;
+                }
+            }
+        }
+    }
 }
+
 

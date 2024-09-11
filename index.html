@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dropbox</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -42,10 +44,14 @@
     <main id="app-main">
         <section class="jumbotron">
             <div class="container">
-                <div class="jumbotron_title"><h1>Tutto ciò che ti serve per il<br> lavoro, in un unico posto</h1></div>
+                <div class="jumbotron_title">
+                    <h1>Tutto ciò che ti serve per il<br> lavoro, in un unico posto</h1>
+                </div>
                 <div class="row">
                     <div class="cal-4 content_left">
-                        <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizare il flusso di lavoro esistente</p>
+                        <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso
+                            posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente
+                            e integrato per ottimizare il flusso di lavoro esistente</p>
                         <button><a href="#">Inizia la tua prova gratuita</a></button>
                         <p>Annulla in qualsiasi momento</p>
                         <a href="#"><i class="fa-solid fa-arrow-down"></i></a>
@@ -57,13 +63,94 @@
 
         <section id="plans">
             <div class="container-small">
-                <div></div>
-                <div class="row">
-                    <div class="col-4"></div>
-                    <div class="col-4"></div>
-                    <div class="col-4"></div>
+                <div>
+                    <h2>Trova il piano business che fa per te</h2>
+                    <span><input type="radio" checked>Fatturazione mensile</span>
+                    <span><input type="radio">Fatturazione annuale</span>
                 </div>
-                <div></div>
+                <div class="row plans_card">
+                    <!-- card plans singolo -->
+                    <div class="col-4 plans_singolo plans">
+                        <div class="subtitle">
+                            <h5><i class="fa-solid fa-user"></i>Singolo</h5>
+                        </div>
+                        <div class="info">
+                            <div>
+                                <h3>Professional</h3>
+                                <span><strong>&euro; 12.00</strong></span>
+                                <span class="month">/mese</span>
+                                <p><i class="fa-solid fa-user"></i>1 utente</p>
+                                <p><i class="fa-solid fa-folder"></i>5 TB di spazio di archiviazione sicuro</p>
+                                <p><i class="fa-solid fa-share-nodes"></i>Funzione di produttività premium e
+                                    condivisione
+                                    file semplice e sicura</p>
+                                <button><a href="#">Prova gratis per 30 giorni</a></button>
+                                <p>oppure <a href="#">acquista ora</a></p>
+                            </div>
+                            <hr class="bg_row">
+                            <div class="plan_points">
+                                <h4>Punti Salienti del piano</h4>
+                                <p><i class="fa-solid fa-check"></i>Invia file fino a 100 GB con Dropbox transfert</p>
+                                <p><i class="fa-solid fa-check"></i>cartelle offline su dispositivi mobili</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card plans team -->
+                    <div class="col-4 plans_team plans">
+                        <div class="subtitle">
+                            <h5><i class="fa-solid fa-users"></i>Team</h5>
+                        </div>
+                        <div class="info">
+                            <div>
+                                <h3>Advanced</h3>
+                                <span><strong>&euro; 18.00</strong></span>
+                                <span class="month">/utent/mese</span>
+                                <p><i class="fa-solid fa-users"></i>3 o piu utenti</p>
+                                <p><i class="fa-solid fa-folder"></i>Tutto lo spazio di cui ha bisogno il tuo team</p>
+                                <p><i class="fa-solid fa-share-nodes"></i>Sofisticate funzioni di controllo e per tenere
+                                    al sicuro tutti i file del tuo team</p>
+                                <button><a href="#">Prova gratis per 30 giorni</a></button>
+                                <p>oppure <a href="#">acquista ora</a></p>
+                            </div>
+                            <hr class="bg_row">
+                            <div class="plan_points">
+                                <h4>Punti Salienti del piano</h4>
+                                <p><i class="fa-solid fa-check"></i>Invia file fino a 100 GB con Dropbox transfert</p>
+                                <p><i class="fa-solid fa-check"></i>cartelle offline su dispositivi mobili</p>
+                                <p><i class="fa-solid fa-check"></i>Risparmio del 50% rispetto alle iscrizioni singole
+                                </p>
+                                <p><i class="fa-solid fa-check"></i>Possibilità di inserire nuovi membri del team</p>
+                                <p><i class="fa-solid fa-check"></i>Gestione dei permessi in base ai ruoli</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card plans azienda -->
+                    <div class="col-4 plans_azienda plans">
+                        <div class="subtitle">
+                            <h5><i class="fa-solid fa-building"></i>Azienda</h5>
+                        </div>
+                        <div class="info">
+                            <div>
+                                <h3>Advanced</h3>
+                                <span><strong>Contattaci</strong></span>
+                                <span class="month">-</span>
+                                <p><i class="fa-solid fa-users"></i>10 o più utenti</p>
+                                <p><i class="fa-solid fa-folder"></i>Soluzioni personalizzabili per la tua azienda</p>
+                                <p><i class="fa-solid fa-share-nodes"></i>Assistenza personalizzata per aiutare gli
+                                    amministratori in una gestione su larga scala</p>
+                                <button><a href="#">Prova gratis per 30 giorni</a></button>
+                                <p>oppure <a href="#">acquista ora</a></p>
+                            </div>
+                            <hr class="bg_row">
+                            <div class="plan_points">
+                                <h4>Punti Salienti del piano</h4>
+                                <p><i class="fa-solid fa-check"></i>Invia file fino a 100 GB con Dropbox transfert</p>
+                                <p><i class="fa-solid fa-check"></i>cartelle offline su dispositivi mobili</p>
+                                <p><i class="fa-solid fa-check"></i>Possibilita di personalizzazione totale</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
