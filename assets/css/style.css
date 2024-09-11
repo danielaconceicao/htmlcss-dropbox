@@ -9,17 +9,26 @@
 :root{
     --drop-blue: rgb(37 99 235);
     --drop-blue-500: rgb(59 130 246);
+    --drop-blue-300: #b4d0e7;
     --drop-black: #000;
     --drop-white: #fff;
 }
 
-/* .debuge #app-header{
+/* .debuge .jumbotron{
     border: 1px dashed black;
-} */
+    width: 100%;
+}  */
 
-/* utilites */
-.d-flex{
+.row{
     display: flex;
+}
+
+.col-4{
+    width: calc((100% / 12) * 4);
+}
+
+.col-8{
+    width: calc((100% / 12) * 8);
 }
 
 .justify-between{
@@ -30,9 +39,20 @@
     align-items: center;
 }
 
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.container-small{
+    width: 50%;
+    margin: 0 auto;
+}
+
+
 /* region header */
 #app-header{
-    padding: 2rem;
+    padding: 1.7rem;
     background-color: var(--drop-white);
     .menu_left{
         gap: 1.6rem;
@@ -65,8 +85,47 @@
     }
     a:hover{
         border-bottom: 1px solid black;
-        padding-bottom: 1rem;
+        padding-bottom: 1.6rem;
         box-shadow: 0 4px 2px -2px gray;
+    }
+}
+
+#app-main{
+    .jumbotron{
+        background-color: var(--drop-blue-300);
+        height: 640px;
+        .jumbotron_title{
+            text-align: start;
+            padding: 2rem 0 1rem 0;
+            font-weight: 800;
+            font-size: 3rem;
+        }
+        .content_left{
+            button{
+                margin: 1rem 0;
+            }
+            a:first-child{
+                text-decoration: none;
+                border: 1px solid transparent;
+                padding: .4rem .6rem;
+                color: var(--drop-white);
+                background-color: var(--drop-blue);
+            }
+            i{
+                color: var(--drop-black);
+                font-size: 3rem;
+                padding-top: 3rem;
+            }
+            p{
+                padding: 1rem 0;
+            }
+        }
+        .content_rigth{
+            img{
+                width: 100%;
+                padding-top: 1rem;
+            }
+        }
     }
 }
 
