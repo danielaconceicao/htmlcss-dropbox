@@ -14,7 +14,7 @@
     --drop-black: #000;
     --drop-white: #fff;
     --drop-gray: gray;
-    --drop-viola: #5E0023;
+    --drop-viola: #46001a;
 }
 
 /* .debuge #plans{
@@ -39,7 +39,7 @@
     width: calc((100% / 12) * 8);
 }
 
-.col-6{
+.col-6 {
     width: calc((100% / 12) * 6);
 }
 
@@ -380,56 +380,98 @@
         }
     }
 
-    #teams{
+    #teams {
         padding-top: 3rem;
-        .team{
-            h2{
+
+        .team {
+            h2 {
                 font-size: 2rem;
                 padding-bottom: 2rem;
             }
-            a{
+
+            a {
                 color: var(--drop-blue-link);
             }
         }
-        .logos{
+
+        .logos {
             padding-top: 8rem;
-            .logo_left{
+
+            .logo_left {
                 flex-wrap: wrap;
                 background-color: #005cff;
                 height: 200px;
             }
-            .logo_center{
+
+            .logo_center {
                 background-color: aquamarine;
                 height: 200px;
             }
-            .logo_rigth{
+
+            .logo_rigth {
                 background-color: brown;
                 height: 200px;
             }
         }
     }
 
-    #call_to_action{
+    #call_to_action {
         background-color: var(--drop-blue-300);
         margin-bottom: 2rem;
-        .content{
+
+        .content {
             padding: 5rem 0;
             margin: auto;
-            justify-content: space-around;
-            h2{
+            justify-content: space-between;
+
+            h2 {
                 color: var(--drop-viola);
             }
-            button{
+
+            button {
                 background-color: var(--drop-white);
                 border: 1px solid transparent;
                 padding: .4rem 2rem;
                 align-items: center;
-                a{
+
+                a {
                     color: var(--drop-black);
                     text-decoration: none;
                 }
             }
         }
     }
+
+    #faq{
+        .questions {
+            h2 {
+                padding-top: 3rem;
+                border-bottom: 2px solid;
+                padding-bottom: 1.5rem;
+            }
+            .question {
+                border-bottom: 2px solid;
+                padding-bottom: 1.3rem;
+                padding-top: .8rem;
+                p{
+                    i {
+                        display: inline-block;
+                        padding-left: 350px;
+                    }
+                }
+                .hidden{
+                    display: none;
+                }
+            }
+            .question:hover .hidden{
+                display: block;
+            }
+        }
+    }
 }
+
+
+
+
+
 
