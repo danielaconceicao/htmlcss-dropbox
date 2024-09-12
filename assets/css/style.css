@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
@@ -6,7 +6,7 @@
     font-family: "Titillium Web", sans-serif;
 }
 
-:root{
+:root {
     --drop-blue-link: #005cff;
     --drop-blue: rgb(37 99 235);
     --drop-blue-500: rgb(59 130 246);
@@ -16,60 +16,65 @@
     --drop-gray: gray;
 }
 
-.debuge #plans{
+/* .debuge #plans{
     border: 1px dashed black;
-} 
+} */
 
-.row{
+.row {
     display: flex;
     margin: 0 -1;
 }
 
-.col-4{
+.col-4 {
     width: calc((100% / 12) * 4);
 }
 
-.col-8{
+.col-8 {
     width: calc((100% / 12) * 8);
 }
 
-.justify-between{
+.justify-between {
     justify-content: space-between;
 }
 
-.align-center{
+.align-center {
     align-items: center;
 }
 
-.container{
+.container {
     width: 70%;
     margin: 0 auto;
 }
 
-.container-small{
+.container-small {
     width: 60%;
     margin: 0 auto;
 }
 
 
 /* region header */
-#app-header{
+#app-header {
     padding: 1.7rem;
     background-color: var(--drop-white);
-    .menu_left{
+
+    .menu_left {
         gap: 1.6rem;
-        a{
+
+        a {
             padding-right: 1.6rem;
         }
-        img{
+
+        img {
             vertical-align: middle;
         }
     }
-    .menu_rigth{
-        a{
+
+    .menu_rigth {
+        a {
             padding-left: 1.6rem;
         }
-        .bg_blue{
+
+        .bg_blue {
             background-color: var(--drop-blue);
             border: 1px solid transparent;
             padding: .3rem 1rem;
@@ -77,133 +82,254 @@
             color: var(--drop-white);
         }
     }
-    a{
+
+    a {
         text-decoration: none;
         color: var(--drop-black);
     }
-    .bg_blue:hover{
+
+    .bg_blue:hover {
         background-color: var(--drop-blue-500);
         transition: .7s;
     }
-    a:hover{
+
+    a:hover {
         border-bottom: 1px solid black;
         padding-bottom: 1.6rem;
         box-shadow: 0 4px 2px -2px gray;
     }
 }
 
-#app-main{
-    .jumbotron{
+#app-main {
+    .jumbotron {
         background-color: var(--drop-blue-300);
         height: 640px;
-        .jumbotron_title{
+
+        .jumbotron_title {
             text-align: start;
             padding: 2rem 0 1rem 0;
             font-weight: 800;
             font-size: 3rem;
         }
-        .content_left{
-            button{
+
+        .content_left {
+            button {
                 margin: 1rem 0;
-            }
-            a:first-child{
-                text-decoration: none;
-                border: 1px solid transparent;
-                padding: .4rem .6rem;
-                color: var(--drop-white);
                 background-color: var(--drop-blue);
+                padding: .4rem .6rem;
+                border: 1px solid transparent;
+
+                a:first-child {
+                    text-decoration: none;
+                    color: var(--drop-white);
+                }
             }
-            i{
+
+            button:hover {
+                background-color: var(--drop-blue-500);
+                transition: .7s;
+            }
+
+            i {
                 color: var(--drop-black);
                 font-size: 3rem;
                 padding-top: 3rem;
             }
-            p{
+
+            p {
                 padding: 1rem 0;
             }
         }
-        .content_rigth{
-            img{
+
+        .content_rigth {
+            img {
                 width: 100%;
                 padding-top: 1rem;
             }
         }
     }
 
-    #plans{
+    #plans {
         padding-top: 5rem;
-        padding-bottom: 9rem;
-        h2{
+        padding-bottom: 7rem;
+
+        h2 {
             padding: 2rem 0;
             font-size: 2rem;
         }
-        span{
+
+        span {
             padding-right: 1.8rem;
         }
-        .plans_card{
+
+        .plans_card {
             padding-top: 3rem;
-            gap: 1.5rem;
+            gap: 2rem;
         }
-        .plans{
+
+        .card {
             border: 1px solid gray;
-        }
-        .info{
-            padding: 1.4rem 1rem;
-            h3{
-                padding: 1rem 0;
-            }
-            .month{
-                display: block;
-                padding: .3rem 0 2rem 0;
-                color: var(--drop-gray);
-            }
-            i{
-                padding-right: .4rem;
-            }
-            p{
-                padding-bottom: 1rem;
-            }
-            button{
-                margin: 1.5rem 0 1rem 0;
-                padding: .5rem 1rem;
-                background-color: var(--drop-blue);
-                a{
-                    text-decoration: none;
-                    color: var(--drop-white);
+
+            .subtitle {
+                font-size: 1.3rem;
+                border-bottom: 1px solid grey;
+
+                h5 {
+                    text-align: center;
+                    padding: .7rem;
+                    font-weight: 400;
+
+                    i {
+                        padding-right: .4rem;
+                    }
                 }
             }
-            a{
-                color: var(--drop-blue);
-            }
-            .bg_row{
-                height: 1px;
-                background-color: var(--drop-gray);
-                width: 3rem;
-            }
-            h4{
-                padding: 2rem 0 1.3rem 0; 
-            }
-            .plan_points{
-                padding-bottom: 4rem;
-                i{
-                    color: var(--drop-blue-link);
-                    font-weight: 800;
+
+            .info {
+                padding: 1.4rem 1rem;
+
+                h3 {
+                    padding: 1rem 0;
+                }
+
+                .month {
+                    display: block;
+                    padding: .3rem 0 2rem 0;
+                    color: var(--drop-gray);
+                }
+
+                i {
+                    padding-right: .4rem;
+                }
+
+                p {
+                    padding-bottom: 1rem;
+                }
+
+                button {
+                    margin: 1.5rem 0 1rem 0;
+                    padding: .5rem;
+                    width: 100%;
+                    background-color: var(--drop-blue);
+
+                    a {
+                        text-decoration: none;
+                        color: var(--drop-white);
+                    }
+                }
+
+                button:hover {
+                    background-color: var(--drop-blue-500);
+                    transition: .7s;
+                }
+
+                a {
+                    color: var(--drop-blue);
+                }
+
+                .bg_row {
+                    height: 1px;
+                    background-color: var(--drop-gray);
+                    width: 3rem;
+                }
+
+                h4 {
+                    padding: 2rem 0 1.3rem 0;
+                }
+
+                .plan_points {
+                    padding-bottom: 4rem;
+
+                    i {
+                        color: var(--drop-blue-link);
+                        font-weight: 800;
+                    }
                 }
             }
         }
 
-        .subtitle{
-            border-bottom: 1px solid grey;
-            h5{
-                text-align: center;
-                padding: .7rem;
-                font-weight: 400;
-                i{
-                    padding-right: .4rem;
+        .enterprise {
+            width: 100%;
+            margin-top: 3rem;
+
+            .enterprise_contact {
+                padding: 2rem;
+
+                span {
+                    display: inline-block;
+                    padding-top: 3rem;
+                }
+
+                h4 {
+                    font-weight: 700;
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    font-weight: 600;
+                    padding-top: .6rem;
+                }
+
+                button {
+                    border: 1px solid transparent;
+                    background-color: var(--drop-blue-500);
+                    padding: .5rem 2rem;
+
+                    a {
+                        text-decoration: none;
+                        color: var(--drop-white);
+                    }
+                }
+            }
+        }
+    }
+
+    #partners {
+        .partners_content {
+            gap: 3rem;
+
+            .content_left {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .content_rigth {
+                padding-top: 5rem;
+
+                h3 {
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                }
+
+                p {
+                    padding: .8rem 0;
+                }
+
+                span {
+                    display: inline-block;
+                    border: 1px solid var(--drop-black);
+                    padding: .5rem;
+                    margin-top: .8rem;
+                    width: 40%;
+                    text-align: center;
+
+                    a {
+                        text-decoration: none;
+                        color: var(--drop-black);
+                    }
+                }
+
+                span:hover {
+                    background-color: var(--drop-black);
+                    color: white;
+                    transition: .8s;
+                }
+
+                a:hover {
+                    color: var(--drop-white);
                 }
             }
         }
     }
 }
-
-
