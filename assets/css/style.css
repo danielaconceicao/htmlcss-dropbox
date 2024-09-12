@@ -27,6 +27,10 @@
     margin: 0 -1rem;
 }
 
+.col{
+    width: calc(100% / 5);
+}
+
 .col-12 {
     width: 100%;
 }
@@ -466,6 +470,41 @@
             .question:hover .hidden{
                 display: block;
             }
+        }
+    }
+}
+
+#app-footer{
+    background-color: var(--drop-black);
+    margin-top: 5rem;
+    padding-bottom: 1.5rem;
+    .footer_info{
+        padding: 4rem 0; 
+        h5{
+            font-size: 1.2rem;
+            color: var(--drop-white);
+            padding-bottom: 1rem;
+        }
+        nav{
+            display: flex;
+            flex-direction: column;
+            a{
+                text-decoration: none;
+                color: var(--drop-white);
+                padding-bottom: .4rem;
+            }
+        }
+    }
+    span{
+        color: var(--drop-white);
+        border-top: 1px solid var(--drop-white);
+        padding-top: 1.5rem;
+        .left{
+            padding-right: .5rem;
+        }
+        .rigth{
+            font-size: .8rem;
+            padding-left: .1rem;
         }
     }
 }
