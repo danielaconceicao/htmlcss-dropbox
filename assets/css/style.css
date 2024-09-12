@@ -14,6 +14,7 @@
     --drop-black: #000;
     --drop-white: #fff;
     --drop-gray: gray;
+    --drop-viola: #5E0023;
 }
 
 /* .debuge #plans{
@@ -391,51 +392,44 @@
             }
         }
         .logos{
-            padding-top: 10rem;
-            img{
-                width: 100%;
-            }
+            padding-top: 8rem;
             .logo_left{
                 flex-wrap: wrap;
+                background-color: #005cff;
+                height: 200px;
+            }
+            .logo_center{
+                background-color: aquamarine;
+                height: 200px;
+            }
+            .logo_rigth{
+                background-color: brown;
+                height: 200px;
+            }
+        }
+    }
+
+    #call_to_action{
+        background-color: var(--drop-blue-300);
+        margin-bottom: 2rem;
+        .content{
+            padding: 5rem 0;
+            margin: auto;
+            justify-content: space-around;
+            h2{
+                color: var(--drop-viola);
+            }
+            button{
+                background-color: var(--drop-white);
+                border: 1px solid transparent;
+                padding: .4rem 2rem;
+                align-items: center;
+                a{
+                    color: var(--drop-black);
+                    text-decoration: none;
+                }
             }
         }
     }
 }
 
-/* .test{
-    width: calc((100% / 6) * 4);
-} */
-
-/* .logo_left{
-    background-color: chocolate;
-    height: 500px;
-    /* .logo_left_1{
-        background-color: #005cff;
-        /* height: 250px; */
-        /* width: 50%; */
-        /* padding: 1rem; */
-       /*  img{
-            margin: 0 auto;
-            text-align: center;
-        } */
-    /* } */ 
-    /* .logo_left_2{
-        background-color: rgb(100, 237, 118);
-        height: 250px;
-        width: 50%;
-    } */
-    /* .logo_left_3{
-        background-color: rgb(163, 12, 62);
-        height: 250px;
-        width: 50%;
-    } */
-/* } */ 
-/* .logo_center{
-    background-color: #005cff;
-    height: 500px;
-} */
-
-/*  .logo_rigth{
-    background-color: blueviolet;
-    height: 500px;
-}  */
