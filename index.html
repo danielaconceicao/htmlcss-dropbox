@@ -46,7 +46,7 @@
         <section class="jumbotron">
             <div class="container">
                 <div class="jumbotron_title">
-                    <h1>Tutto ciò che ti serve per il<br> lavoro, in un unico posto</h1>
+                    <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
                 </div>
                 <div class="row">
                     <div class="cal-4 content_left">
@@ -66,64 +66,113 @@
             <div class="container-small">
                 <div>
                     <h2>Trova il piano business che fa per te</h2>
-                    <span><input type="radio" checked>Fatturazione mensile</span>
-                    <span><input type="radio">Fatturazione annuale</span>
+                    <span><input type="radio" name="base" checked>Fatturazione mensile</span>
+                    <span><input type="radio" name="base">Fatturazione annuale</span>
                 </div>
                 <div class="row plans_card">
                     <!-- card plans singolo -->
-                    <div class="col-4 plans_singolo card">
+                    <div class="col-4 plans_singolo card"><!-- card altura 100% -->
                         <div class="subtitle">
                             <h5><i class="fa-solid fa-user"></i>Singolo</h5>
                         </div>
-                        <div class="info">
-                            <div>
-                                <h3>Professional</h3>
-                                <span><strong>&euro; 12.00</strong></span>
-                                <span class="month">/mese</span>
-                                <p><i class="fa-solid fa-user"></i>1 utente</p>
-                                <p><i class="fa-solid fa-folder"></i>5 TB di spazio di archiviazione sicuro</p>
-                                <p>
+                        <div class="card_body">
+                            <h3>Professional</h3>
+                            <div class="price"><strong>&euro; 12.00</strong></div>
+                            <div class="month">/mese</div> <!-- final da primeira card -->
+                            <!-- inicio da lista -->
+                            <ul class="list">
+                                <li class="row">
+                                    <i class="fa-solid fa-user"></i>
+                                    <div>1 utente</div>
+                                </li>
+                                <li class="row">
+                                    <i class="fa-solid fa-folder"></i>
+                                    <div>5 TB di spazio di archiviazione sicuro</div>
+                                </li>
+                                <li class="row">
                                     <i class="fa-solid fa-share-nodes test-2"></i>
-                                    Funzione di produttività premium e condivisione file semplice e sicura
-                                </p>
-                                <button><a href="#">Prova gratis per 30 giorni</a></button>
-                                <p>oppure <a href="#">acquista ora</a></p>
+                                    <div>Funzione di produttività premium e condivisione file semplice e sicura</div>
+                                </li>
+                            </ul>
+                            <!-- ul abaixo li/ disp flex - gap .5 - aligm start -->
+                            <div class="cta">
+                                <a href="#" class="btn">Prova gratis per 30giorni</a>
                             </div>
-                            <hr class="bg_row">
-                            <div class="plan_points">
-                                <h4>Punti Salienti del piano</h4>
-                                <p><i class="fa-solid fa-check"></i>Invia file fino a 100 GB con Dropbox transfert</p>
-                                <p><i class="fa-solid fa-check"></i>cartelle offline su dispositivi mobili</p>
-                            </div>
+                            <p>oppure <a href="#">acquista ora</a></p>
+
+                            <hr class="divisor"><!-- colocar margim emcima e embaixo -->
+
+                            <h4>Punti Salienti del piano</h4>
+                            <ul class="list">
+                                <li class="row">
+                                    <i class="fa-solid fa-check"></i>
+                                    <div>Invia file fino a 100 GB con Dropbox transfert</div>
+                                </li>
+                                <li class="row">
+                                    <i class="fa-solid fa-check"></i>
+                                    <div>cartelle offline su dispositivi mobili</div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
+
                     <!-- card plans team -->
                     <div class="col-4 plans_team card">
                         <div class="subtitle">
                             <h5><i class="fa-solid fa-users"></i>Team</h5>
                         </div>
-                        <div class="info">
-                            <div>
-                                <h3>Advanced</h3>
-                                <span><strong>&euro; 18.00</strong></span>
-                                <span class="month">/utent/mese</span>
-                                <p><i class="fa-solid fa-users"></i>3 o piu utenti</p>
-                                <p><i class="fa-solid fa-folder"></i>Tutto lo spazio di cui ha bisogno il tuo team</p>
-                                <p><i class="fa-solid fa-share-nodes"></i>Sofisticate funzioni di controllo e per tenere
-                                    al sicuro tutti i file del tuo team</p>
-                                <button><a href="#">Prova gratis per 30 giorni</a></button>
-                                <p>oppure <a href="#">acquista ora</a></p>
-                            </div>
-                            <hr class="bg_row">
-                            <div class="plan_points">
-                                <h4>Punti Salienti del piano</h4>
-                                <p><i class="fa-solid fa-check"></i>Invia file fino a 100 GB con Dropbox transfert</p>
-                                <p><i class="fa-solid fa-check"></i>cartelle offline su dispositivi mobili</p>
-                                <p><i class="fa-solid fa-check"></i>Risparmio del 50% rispetto alle iscrizioni singole
-                                </p>
-                                <p><i class="fa-solid fa-check"></i>Possibilità di inserire nuovi membri del team</p>
-                                <p><i class="fa-solid fa-check"></i>Gestione dei permessi in base ai ruoli</p>
-                            </div>
+                        <div class="card_body">
+
+                            <h3>Advanced</h3>
+                            <div><strong>&euro; 18.00</strong></div>
+                            <div class="month">/utent/mese</div>
+
+                            <ul class="list">
+                                <li class="row">
+                                    <i class="fa-solid fa-users"></i>
+                                    <div>3 o piu utenti</div>
+                                </li>
+                                <li class="row">
+                                    <i class="fa-solid fa-folder"></i>
+                                    <div>Tutto lo spazio di cui ha bisogno il tuo team</div>
+                                </li>
+                                <li class="row">
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                    <div>Sofisticate funzioni di controllo e per tenereal sicuro tutti i file del tuo
+                                        team</div>
+                                </li>
+                            </ul>
+
+                            <div class="cta"><a href="#" class="btn">Prova gratis per 30 giorni</a></div>
+
+                            <p>oppure <a href="#">acquista ora</a></p>
+
+                            <hr class="divisor">
+
+                            <h4>Punti Salienti del piano</h4>
+
+                            <ul class="list">
+                                <li class="row">
+                                    <i class="fa-solid fa-check"></i>
+                                    <div>Invia file fino a 100 GB con Dropbox transfert</div>
+                                </li>
+                                <li class="row">
+                                    <i class="fa-solid fa-check"></i>
+                                    <div>cartelle offline su dispositivi mobili</div>
+                                </li>
+                                <li class="row">
+                                    <i class="fa-solid fa-check"></i>
+                                    <div>Risparmio del 50% rispetto alle iscrizioni singole</div>
+                                </li>
+                                <li class="row">
+                                    <i class="fa-solid fa-check"></i>
+                                    <div>Possibilità di inserire nuovi membri del team</div>
+                                </li>
+                                <li class="row">
+                                    <i class="fa-solid fa-check"></i>
+                                    <div>Gestione dei permessi in base ai ruoli</div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <!-- card plans azienda -->
@@ -131,25 +180,47 @@
                         <div class="subtitle">
                             <h5><i class="fa-solid fa-building"></i>Azienda</h5>
                         </div>
-                        <div class="info">
-                            <div>
-                                <h3>Advanced</h3>
-                                <span><strong>Contattaci</strong></span>
-                                <span class="month">-</span>
-                                <p><i class="fa-solid fa-users"></i>10 o più utenti</p>
-                                <p><i class="fa-solid fa-folder"></i>Soluzioni personalizzabili per la tua azienda</p>
-                                <p><i class="fa-solid fa-share-nodes"></i>Assistenza personalizzata per aiutare gli
-                                    amministratori in una gestione su larga scala</p>
-                                <button><a href="#">Contattaci</a></button>
-                                <p>oppure <a href="#">acquista ora</a></p>
-                            </div>
-                            <hr class="bg_row">
-                            <div class="plan_points">
-                                <h4>Punti Salienti del piano</h4>
-                                <p><i class="fa-solid fa-check"></i>Invia file fino a 100 GB con Dropbox transfert</p>
-                                <p><i class="fa-solid fa-check"></i>cartelle offline su dispositivi mobili</p>
-                                <p><i class="fa-solid fa-check"></i>Possibilita di personalizzazione totale</p>
-                            </div>
+                        <div class="card_body">
+                            <h3>Advanced</h3>
+                            <div><strong>Contattaci</strong></div>
+                            <div class="month">-</div>
+                            <ul class="list">
+                                <li class="row">
+                                    <i class="fa-solid fa-users"></i>
+                                    <div>10 o più utenti</div>
+                                </li>
+                                <li class="row">
+                                    <i class="fa-solid fa-folder"></i>
+                                    <div>Soluzioni personalizzabili per la tua azienda</div>
+                                </li>
+                                <li class="row">
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                    <div>Assistenza personalizzata per aiutare gliamministratori in una gestione su
+                                        larga scala</div>
+                                </li>
+                            </ul>
+
+                            <div class="cta"><a href="#" class="btn">Contattaci</a></div>
+                            <p>oppure <a href="#">acquista ora</a></p>
+
+                            <hr class="divisor">
+
+                            <h4>Punti Salienti del piano</h4>
+                            
+                            <ul class="list">
+                                <li class="row">
+                                    <i class="fa-solid fa-check"></i>
+                                    <div>Invia file fino a 100 GB con Dropbox transfert</div>
+                                </li>
+                                <li class="row">
+                                    <i class="fa-solid fa-check"></i>
+                                    <div>cartelle offline su dispositivi mobili</div>
+                                </li>
+                                <li class="row">
+                                    <i class="fa-solid fa-check"></i>
+                                    <div>Possibilita di personalizzazione totale</div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -246,7 +317,7 @@
             </div>
             <div class="col-12">
                 <div class="row logos">
-                    <div class="logo_left col-5 row">
+                    <div class="logo_left col-9 row">
                         <div class="logo_left_1 logo"><img src="assets/image/designit.svg" alt=""></div>
                         <div class="logo_left_2 logo"><img src="assets/image/arizona_state_university.svg" alt="">
                         </div>
@@ -254,7 +325,7 @@
                         </div>
                         <div class="logo_left_4 logo"><img src="assets/image/topps.svg" alt=""> </div>
                     </div>
-                    <div class="logo_center col-5">
+                    <div class="logo_center col-9">
                         <img src="assets/image/designit.svg" alt="">
                         <hr class="bg_row">
                         <figure>
@@ -270,7 +341,7 @@
                             </figcaption>
                         </figure>
                     </div>
-                    <div class="logo_rigth col-5 row">
+                    <div class="logo_rigth col-9 row">
                         <div class="logo_rigth_1 logo"><img src="assets/image/world_bicycle_relief.svg" alt=""></div>
                         <div class="logo_rigth_2 logo"><img src="assets/image/hearst_corp.svg" alt=""></div>
                         <div class="logo_rigth_3 logo"><img src="assets/image/lonely_planet.svg" alt=""></div>

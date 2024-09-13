@@ -22,10 +22,6 @@
     --drop-bg-center: #F5F5F5;
 }
 
-/* .debuge #plans{
-    border: 1px dashed black;
-} */
-
 /* utilities */
 .row {
     display: flex;
@@ -44,8 +40,8 @@
     width: calc((100% / 12) * 8);
 }
 
-.col-5 {
-    width: calc((100% / 12) * 5);
+.col-9 {
+    width: calc((100% / 12) * 9);
 }
 
 .col-4 {
@@ -71,6 +67,11 @@
 .container,
 .container-small {
     margin: 0 auto;
+}
+
+.list {
+    text-decoration: none;
+    list-style: none;
 }
 
 
@@ -126,13 +127,14 @@
 #app-main {
     .jumbotron {
         background-color: var(--drop-blue-300);
-        height: 640px;
+        margin-bottom: 3rem;
+        height: 710px;
 
         .jumbotron_title {
             text-align: start;
             padding: 2rem 0 1rem 0;
             font-weight: 800;
-            font-size: 3rem;
+            font-size: 4.5rem;
         }
 
         .content_left {
@@ -173,11 +175,11 @@
     }
 
     #plans {
-        padding-top: 5rem;
+        padding-top: 6rem;
         padding-bottom: 7rem;
 
         h2 {
-            padding: 2rem 0;
+            padding: 3rem 0;
             font-size: 2rem;
         }
 
@@ -208,8 +210,8 @@
                 }
             }
 
-            .info {
-                padding: 1.4rem 1rem;
+            .card_body {
+                padding: 1.5rem;
 
                 h3 {
                     padding: 1rem 0;
@@ -229,19 +231,19 @@
                     padding-bottom: 1rem;
                 }
 
-                button {
+                .cta {
                     margin: 1.5rem 0 1rem 0;
                     padding: .5rem;
                     width: 100%;
                     background-color: var(--drop-blue);
 
-                    a {
+                    .btn {
                         text-decoration: none;
                         color: var(--drop-white);
                     }
                 }
 
-                button:hover {
+                .cta:hover {
                     background-color: var(--drop-blue-500);
                     transition: .7s;
                 }
@@ -250,7 +252,7 @@
                     color: var(--drop-blue);
                 }
 
-                .bg_row {
+                .divisor {
                     height: 1px;
                     background-color: var(--drop-gray);
                     width: 3rem;
@@ -484,7 +486,7 @@
                 text-align: center;
 
                 img {
-                    width: 70%;
+                    width: 60%;
                     vertical-align: middle;
                     padding: 3rem 0;
                 }
