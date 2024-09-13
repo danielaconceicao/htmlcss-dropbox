@@ -410,21 +410,25 @@
 
             .logo_left {
                 flex-wrap: wrap;
+
                 .logo_left_1 {
                     border: 20px solid #d4ead0;
                     background-color: var(--drop-designit);
                     text-align: center;
                 }
+
                 .logo_left_2 {
                     background-color: var(--drop-asu);
                 }
+
                 .logo_left_3 {
                     background-color: var(--drop-university);
                 }
+
                 .logo_left_4 {
                     background-color: var(--drop-topps);
                 }
-                
+
             }
 
             .logo_center {
@@ -453,26 +457,32 @@
 
             .logo_rigth {
                 flex-wrap: wrap;
-                .logo_rigth_1{
+
+                .logo_rigth_1 {
                     background-color: red;
                 }
-                .logo_rigth_2{
+
+                .logo_rigth_2 {
                     background-color: var(--drop-blue-300);
+
                     img {
                         padding: 6rem 0;
                     }
                 }
-                .logo_rigth_3{
+
+                .logo_rigth_3 {
                     background-color: #0d2481;
                 }
-                .logo_rigth_4{
+
+                .logo_rigth_4 {
                     background-color: yellow;
                 }
             }
 
-            .logo{
+            .logo {
                 width: 320px;
                 text-align: center;
+
                 img {
                     width: 70%;
                     vertical-align: middle;
@@ -586,10 +596,3 @@
     }
 
 }
-
-
-
-
-
-
-
