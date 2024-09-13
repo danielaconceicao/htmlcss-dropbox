@@ -22,21 +22,22 @@
         <div class="row justify-between align-center">
             <div class="menu_left row align-center">
                 <div class="img_menu_left">
-                    <img src="assets/image/logo-small.png" alt="">
+                    <img src="assets/image/logo-small.png" alt="logo Dropbox">
                 </div>
-                <nav class="nav_left">
-                    <a href="#">Perchè Dropbox</a>
-                    <a href="#">Funzioni</a>
-                    <a href="#">Piani e Prezzi</a>
-                </nav>
+                <ul class="nav_left list d-flex">
+                    <li><a href="#">Perchè Dropbox</a></li>
+                    <li><a href="#">Funzioni</a></li>
+                    <li><a href="#">Piani e Prezzi</a></li>
+                </ul>
             </div>
-            <div class="menu_rigth">
-                <nav class="nav_rigth">
-                    <a href="#">Supporto</a>
-                    <a href="#">Contatta l'uffucio vendite</a>
-                    <a href="#">Accedi</a>
-                    <a href="#" class="bg_blue">Inizia</a>
-                </nav>
+            <div class="menu_rigth d-flex">
+                <ul class="list d-flex">
+                    <li><a href="#">Supporto</a></li>
+                    <li><a href="#">Contatta l'uffucio vendite</a></li>
+                    <li><a href="#">Accedi</a></li>
+                </ul>
+
+                <div><a href="#" class="bg_blue">Inizia</a></div>
             </div>
         </div>
     </header>
@@ -54,7 +55,7 @@
                             posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente
                             e integrato per ottimizare il flusso di lavoro esistente</p>
                         <button><a href="#">Inizia la tua prova gratuita</a></button>
-                        <p>Annulla in qualsiasi momento</p>
+                        <p class="text-center">Annulla in qualsiasi momento</p>
                         <a href="#plans"><i class="fa-solid fa-arrow-down"></i></a>
                     </div>
                     <div class="cal-8 content_rigth"><img src="assets/image/jumbo.png" alt=""></div>
@@ -69,17 +70,17 @@
                     <span><input type="radio" name="base" checked>Fatturazione mensile</span>
                     <span><input type="radio" name="base">Fatturazione annuale</span>
                 </div>
-                <div class="row plans_card">
+                <div class="d-flex plans_card">
                     <!-- card plans singolo -->
-                    <div class="col-4 plans_singolo card"><!-- card altura 100% -->
+                    <div class="col-4 plans_singolo card">
                         <div class="subtitle">
                             <h5><i class="fa-solid fa-user"></i>Singolo</h5>
                         </div>
                         <div class="card_body">
                             <h3>Professional</h3>
                             <div class="price"><strong>&euro; 12.00</strong></div>
-                            <div class="month">/mese</div> <!-- final da primeira card -->
-                            <!-- inicio da lista -->
+                            <div class="month">/mese</div>
+
                             <ul class="list">
                                 <li class="row">
                                     <i class="fa-solid fa-user"></i>
@@ -94,22 +95,21 @@
                                     <div>Funzione di produttività premium e condivisione file semplice e sicura</div>
                                 </li>
                             </ul>
-                            <!-- ul abaixo li/ disp flex - gap .5 - aligm start -->
                             <div class="cta">
                                 <a href="#" class="btn">Prova gratis per 30giorni</a>
                             </div>
                             <p>oppure <a href="#">acquista ora</a></p>
 
-                            <hr class="divisor"><!-- colocar margim emcima e embaixo -->
+                            <hr class="divisor">
 
                             <h4>Punti Salienti del piano</h4>
                             <ul class="list">
                                 <li class="row">
-                                    <i class="fa-solid fa-check"></i>
+                                    <i class="fa-solid fa-check" style="color:#005cff;"></i>
                                     <div>Invia file fino a 100 GB con Dropbox transfert</div>
                                 </li>
                                 <li class="row">
-                                    <i class="fa-solid fa-check"></i>
+                                    <i class="fa-solid fa-check" style="color:#005cff;"></i>
                                     <div>cartelle offline su dispositivi mobili</div>
                                 </li>
                             </ul>
@@ -153,23 +153,23 @@
 
                             <ul class="list">
                                 <li class="row">
-                                    <i class="fa-solid fa-check"></i>
+                                    <i class="fa-solid fa-check" style="color:#005cff;"></i>
                                     <div>Invia file fino a 100 GB con Dropbox transfert</div>
                                 </li>
                                 <li class="row">
-                                    <i class="fa-solid fa-check"></i>
+                                    <i class="fa-solid fa-check" style="color:#005cff;"></i>
                                     <div>cartelle offline su dispositivi mobili</div>
                                 </li>
                                 <li class="row">
-                                    <i class="fa-solid fa-check"></i>
+                                    <i class="fa-solid fa-check" style="color:#005cff;"></i>
                                     <div>Risparmio del 50% rispetto alle iscrizioni singole</div>
                                 </li>
                                 <li class="row">
-                                    <i class="fa-solid fa-check"></i>
+                                    <i class="fa-solid fa-check" style="color:#005cff;"></i>
                                     <div>Possibilità di inserire nuovi membri del team</div>
                                 </li>
                                 <li class="row">
-                                    <i class="fa-solid fa-check"></i>
+                                    <i class="fa-solid fa-check" style="color:#005cff;"></i>
                                     <div>Gestione dei permessi in base ai ruoli</div>
                                 </li>
                             </ul>
@@ -206,18 +206,18 @@
                             <hr class="divisor">
 
                             <h4>Punti Salienti del piano</h4>
-                            
+
                             <ul class="list">
                                 <li class="row">
-                                    <i class="fa-solid fa-check"></i>
+                                    <i class="fa-solid fa-check" style="color:#005cff;"></i>
                                     <div>Invia file fino a 100 GB con Dropbox transfert</div>
                                 </li>
                                 <li class="row">
-                                    <i class="fa-solid fa-check"></i>
+                                    <i class="fa-solid fa-check" style="color:#005cff;"></i>
                                     <div>cartelle offline su dispositivi mobili</div>
                                 </li>
                                 <li class="row">
-                                    <i class="fa-solid fa-check"></i>
+                                    <i class="fa-solid fa-check" style="color:#005cff;"></i>
                                     <div>Possibilita di personalizzazione totale</div>
                                 </li>
                             </ul>
@@ -247,7 +247,7 @@
         <!-- section partners -->
         <section id="partners">
             <div class="container-small">
-                <div class="row partners_content">
+                <div class="d-flex partners_content">
                     <div class="col-8 content_left"><img src="assets/image/partner.png" alt=""></div>
                     <div class="col-4 content_rigth">
                         <h3>Entra in contatto con un partner Dropbox</h3>
