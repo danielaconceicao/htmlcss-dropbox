@@ -617,7 +617,7 @@
 
 /* Media Query */
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 344px) {
     .text-center {
         text-align: center;
     }
@@ -627,8 +627,21 @@
     }
 
     #app-header {
+        padding: 1.4rem;
+
         .list {
             display: none;
+        }
+
+        .menu_left {
+            padding-left: 1.1rem;
+        }
+
+        .menu_rigth {
+            .bg_blue {
+                padding-right: 1rem;
+                margin-left: 0;
+            }
         }
     }
 
@@ -671,7 +684,7 @@
                 }
 
                 span {
-                    padding: .8rem;
+                    padding: .7rem;
                 }
 
                 .plans_card {
@@ -850,4 +863,110 @@
         }
     }
 
+}
+
+@media screen and (min-width: 455px) and (max-width: 630px) {
+    #plans {
+        .container_center {
+            position: relative;
+            padding-bottom: 1.4rem;
+
+            .span_mensile {
+                position: absolute;
+                right: 30px;
+                top: 117px;
+            }
+
+            .span_annuale {
+                position: absolute;
+                left: 20px;
+                top: 117px;
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 631px) {
+    #app-main {
+        #plans {
+            .container_center {
+                width: 60%;
+                margin: auto;
+            }
+        }
+
+        #operations {
+            .operations_card {
+                padding-top: 1rem;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin: auto;
+
+                img,
+                h4 {
+                    width: 80%;
+                    padding-left: 2.5rem;
+                    text-align: center;
+                }
+
+                h4 {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+        #call_to_action {
+            .content {
+                text-align: center;
+
+                h2 {
+                    padding-bottom: 1rem;
+                }
+            }
+        }
+
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    #app-main {
+        #plans {
+            .container-sm {
+                .plans_card {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    gap: 0;
+                    padding: 1rem 0;
+                    .card{
+                        width: 40%;
+                        margin: 1rem auto;
+                    }
+                    .plans_singolo{
+                      ul{
+                        padding-bottom: 1.2rem;
+                        li{
+                            padding-bottom: .8rem;
+                        }
+                      }
+                    }
+                }
+            }
+
+        }
+
+        #partners{
+            .partners_content{
+                .content_rigth{
+                    h3{
+                        text-align: center;
+                    }
+                    span{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
 }
